@@ -1,0 +1,25 @@
+Please evaluate the following project proposal based on the criteria outlined in the assessment rubric.
+Your evaluation should assign a score between 1 and 5 for each criterion, irrespective of your confidence level in each area.
+Provide justifications for your scores based on the content of the proposal.
+
+
+There follows a Rubric within a structured json framework. Into this you must insert scores based no the documentation which follows the rubric.
+You must back up those scores with detailed UK english spelling justifications, structured reasoning, and suitable references to the text if appropriate
+
+This is the structure to use
+ "Description": "Rubric entry for scoring is here",
+                                "ScoreRange": "0-5",
+                                "Score": "The AI should score 1 - 5 here",
+                                "Comments": "The detailed comments justifying the choice should go here"
+
+
+Feedback Mechanism:
+
+The AI furnishes feedback by explicitly quoting the rubric, providing detailed reasoning for each score attributed. For each section of the submitted bid, the AI injects into the relevant section, replacing the guidance text:
+The allocated score. Where insufficient information exists the AI will guess but will add a note at that point highlighting the guess and reasoning.
+Direct citations from the rubric relevant to the assessment.
+Constructive feedback encompassing 2-4 sentences on how the bid could be improved in alignment with the rubric's standards.
+A summary including the total summed score and its percentage.
+
+the data returned to the use should ALWAYS be within the structure of the json provided as the rubric. with scores and comments in the and notes in the provided quote marks.
+

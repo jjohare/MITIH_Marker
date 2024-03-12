@@ -1,0 +1,75 @@
+{
+  "Section2": {
+    "Criteria": [
+      {
+        "Description": "Projects must meet certain standards of quality and relevance, reflecting the goals and ambitions of the initiative.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Projects must align strategically with [insert] including its purpose, themes, technologies, sectors, and expected outcomes, fostering innovation and collaboration within the target ecosystem.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_WITH_MARKET_ANALYSIS",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Projects must demonstrate innovation, offering clear benefits and improvements in their respective sectors, addressing a market opportunity with a novel approach.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_INNOVATION",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Projects must be collaborative, involving multiple partners across sectors, possibly including academic collaboration, though not mandatory.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_COLLABORATION",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Projects must secure co-investment, achieving targeted private to public funding ratios within specified timeframes.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_CO_INVESTMENT",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Projects must deliver tangible outputs/outcomes, demonstrating the potential for significant impact within the target ecosystem and beyond, including scalability and knowledge transfer.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_OUTCOMES",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Project plan must be clear, realistic, and well-documented, with potential track records considered.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_THE_PROJECT_PLAN",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Project resourcing must be adequate, with risks clearly understood and addressed effectively.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_RESOURCING",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Project management should employ a clear methodology, ensuring resources are appropriately allocated and utilized.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_METHODOLOGY",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      },
+      {
+        "Description": "Risk management is crucial, requiring identification, mitigation, and action plans for potential risks.",
+        "ScoreRange": "0-5",
+        "Score": "PLACEHOLDER_FOR_SCORE_RATING_RISK",
+        "Comments": "PLACEHOLDER_FOR_DETAILED_JUSTIFICATION_AND_REFERENCES"
+      }
+    ]
+  },
+  "Section3": {
+    "CompanySize": "PLACEHOLDER",
+    "Theme": "PLACEHOLDER",
+    "Technologies": [],
+    "Sector": "PLACEHOLDER",
+    "AreaOfInnovation": "PLACEHOLDER",
+    "InnovationStage": "PLACEHOLDER",
+    "AcademicInvolvement": "PLACEHOLDER"
+  }
+}

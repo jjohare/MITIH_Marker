@@ -1,0 +1,8 @@
+pandas
+python-docx
+pdf2image
+Pillow
+pytesseract
+pyarrow
+openpyxl
+openai
