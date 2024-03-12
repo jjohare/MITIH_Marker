@@ -29,13 +29,9 @@ To set up the project on your local machine, follow these steps:
 1. Clone the repository:
 git clone <repository-url>
 
-css
-Copy code
 2. Navigate to the project directory:
 cd <project-name>
 
-markdown
-Copy code
 3. Install the required Python packages:
 pip install -r requirements.txt
 
