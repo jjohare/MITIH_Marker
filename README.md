@@ -1,5 +1,8 @@
 # AI-Powered Bid Assessment Tool
 
+![image](https://github.com/jjohare/MITIH_Marker/assets/55586797/2dbc2cac-31dc-4011-a602-2767cf000b5c)
+
+
 ## Introduction
 
 This repository contains an AI-powered tool designed to assess bid submissions effectively. Utilizing a custom AI model, this tool evaluates submissions based on a predefined rubric, aiming to streamline the assessment process and enhance decision-making accuracy.
