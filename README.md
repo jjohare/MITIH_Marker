@@ -1,83 +1,91 @@
-# AI-Powered Bid Assessment Tool
+# AI-Powered Project Proposal Assessment Tool
 
-![image](https://github.com/jjohare/MITIH_Marker/assets/55586797/2dbc2cac-31dc-4011-a602-2767cf000b5c)
-
+This repository hosts an AI-powered tool designed to efficiently and accurately assess project proposals. Utilizing advanced AI models, this tool evaluates proposals against a predefined rubric, aiming to streamline the assessment process and enhance decision-making accuracy.
 
 ## Introduction
 
-This repository contains an AI-powered tool designed to assess bid submissions effectively. Utilizing a custom AI model, this tool evaluates submissions based on a predefined rubric, aiming to streamline the assessment process and enhance decision-making accuracy.
+The AI-Powered Project Proposal Assessment Tool automates the evaluation of project proposals by comparing them against a detailed assessment rubric. This approach ensures a structured and objective assessment process, facilitating more informed decision-making.
 
 ## Features
 
-- **Automated Bid Evaluation:** Leverages AI to score bid submissions against a comprehensive assessment rubric.
-- **Customizable Rubric:** Easy to adapt the assessment criteria based on specific project requirements.
-- **Detailed Feedback:** Provides in-depth feedback and suggestions for each submission to support improvements.
-- **User-Friendly Interface:** A streamlined interface for both administrators and users to submit and review bids.
+- **Automated Proposal Evaluation:** Employs AI to systematically score project proposals based on an extensive assessment rubric.
+- **Customizable Rubric:** Allows for the adjustment of assessment criteria to suit the specific requirements of various projects.
+- **Detailed Feedback:** Provides comprehensive feedback and recommendations for each proposal, guiding proposers towards necessary improvements.
+- **User-Friendly Interface:** Offers an easy-to-use interface for administrators to manage assessments and for users to submit proposals.
 
 ## Requirements
 
-Before installing and running this project, ensure you have the following:
+Before setting up the project, ensure you have:
 
 - Python 3.8 or newer
 - Pip package manager
-- Additional Python dependencies listed in `requirements.txt`
+- All necessary Python dependencies as listed in `requirements.txt`
 
 ## Installation
 
-To set up the project on your local machine, follow these steps:
+To install the project locally, follow these instructions:
 
 1. Clone the repository:
 git clone <repository-url>
 
+css
+Copy code
 2. Navigate to the project directory:
 cd <project-name>
 
+markdown
+Copy code
 3. Install the required Python packages:
 pip install -r requirements.txt
 
+bash
+Copy code
+
 ## Usage
 
-To start the application, run:
+Start the application with the following command:
 
 streamlit run StreamLitMarkThis.py
 
-Follow the on-screen instructions to upload bid submissions and receive assessments.
+vbnet
+Copy code
+
+Follow the prompts on the screen to upload project proposals and receive assessments.
 
 ## Configuration
 
-The assessment rubric can be customized by editing `assessment_rubric.json`. Refer to `instructions.txt` for guidelines on adapting the rubric to fit your assessment criteria.
+Customize the assessment rubric by modifying the `assessment_rubric.json` file. For guidance on tailoring the rubric to specific assessment needs, refer to the `instructions.txt`.
 
 ## Contributing
 
-Contributions to improve the tool are welcome. Please follow these steps to contribute:
+Contributions to enhance the tool are welcome. Please adhere to the contribution guidelines if you wish to contribute.
 
 ## License
 
-This project is licensed under the Apache-2 License - see the [LICENSE](LICENSE) file for details.
-
-
-
+This project is under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
 
 ```mermaid
 sequenceDiagram
-    participant User as User
-    participant Script as Python Script
-    participant Excel as Process Excel Workbook
-    participant Docx as Process DOCX Files
-    participant PDF as Process PDFs
-    participant OCR as OCR Processing
-    participant Upload as Upload to OpenAI Assistant
+    actor User
+    participant Streamlit as st
+    participant Main
+    participant ProcessFiles as Process Files
+    participant Concatenate
+    participant GeneratePrompt as Generate Prompt
+    participant CallOpenAI as Call OpenAI API
+    participant GenerateOutput as Generate Output
+    participant Cleanup
 
-    User->>Script: Run script with directory path
-    Script->>Excel: Find .xlsx files
-    Excel->>Script: Convert tabs to CSV
-    Script->>Upload: Upload CSVs
-    Script->>Docx: Find .docx files
-    Docx->>Script: Convert & check tables
-    Script->>Upload: Upload processed DOCX
-    Script->>PDF: Find .pdf files
-    PDF->>OCR: Convert to images
-    OCR->>Script: Perform OCR on images
-    Script->>Upload: Upload OCR text
-    Upload->>User: Confirmation & Results
-```
+    User->>st: Upload files
+    st->>Main: Initiate processing
+    Main->>ProcessFiles: Process each file based on type
+    loop For each file
+        ProcessFiles->>Concatenate: Concatenate text outputs
+    end
+    Concatenate->>GeneratePrompt: Generate prompt from texts
+    GeneratePrompt->>CallOpenAI: Call API with prompt
+    CallOpenAI->>GenerateOutput: Generate Markdown and HTML outputs
+    GenerateOutput->>st: Display outputs and link to HTML
+    Main->>Cleanup: Clean up directories
+    Cleanup->>st: Confirm cleanup
+Remember to replace <repository-url> and <project-name> with your GitHub repository's actual URL and your project's directory name, respectively.
